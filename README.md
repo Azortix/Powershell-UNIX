@@ -6,7 +6,7 @@
 |cd _path_|Set-Location _path_|Get-Help cd then Get-Help Set-Location|
 |mkdir _name_|New-Item -name _name_ -itemtype directory |Get-Help new then Get-Help New-Item|
 |man _command_|Get-Help _comand_|Quête actuelle / Get-Help|
-|history (15)|Get-History (-count 15)|Get-Help history then Get-Help Get-History|
+|history (_nombre_)|Get-History (-count _nombre_)|Get-Help history then Get-Help Get-History|
 |alias _new name_="_name command_"|Set-Alias -name _new name_ -value _name command_|Get-Help alias then Get-Help Set-Alias|
 |cat _fichier_|Get-Content -path _path_|Get-Help cat then Get-Help Get-Content|
 
