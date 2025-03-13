@@ -1,0 +1,22 @@
+
+  Id CommandLine                                                                      
+  -- -----------                                                                      
+   1 Set-Location -Path C:\...                                                        
+   2 New-Item -path EvenFolder -ItemType Directory                                    
+   3 New-Item -path OddFolder -ItemType Directory                                     
+   4 Set-Location FolderTest1                                                         
+   5 Move-Item File[24] -Destination C:\EvenFolder                                    
+   6 Move-Item File[135] -Destination C:\OddFolder                                    
+   7 Set-Location -path C:\FolderTest2                                                
+   8 Move-Item File[79] -Destination C:\OddFolder                                     
+   9 Move-Item File[6810] -Destination C:\EvenFolder                                  
+  10 Get-ChildItem -Path C:\EvenFolder -Recurse > listing.txt                         
+  11 cat .\listing.txt                                                                
+  12 Set-Location -path C:\FolderTest1                                                
+  13 Move-Item File10 -Destination C:\EvenFolder                                      
+  14 Set-Location -path C:\FolderTest2                                                
+  15 Move-Item File10 -Destination C:\EvenFolder                                      
+  16 Get-ChildItem -Path C:\EvenFolder -Recurse > listing_even.txt                    
+  17 Get-ChildItem -Path C:\OddFolder -Recurse > listing_odd.txt                      
+
+
